@@ -1,29 +1,20 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
-import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import Image from "next/image";
-import AdbIcon from "@mui/icons-material/Adb";
 import HomeIcon from "@mui/icons-material/Home";
 import ProductionQuantityLimitsIcon from "@mui/icons-material/ProductionQuantityLimits";
-import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
+  
   window?: () => Window;
 }
 
@@ -49,9 +40,7 @@ export default function DrawerAppBar(props: Props) {
         <ListItemButton className="listnav" href="/products">
           สินค้าของเรา
         </ListItemButton>
-        {/* <ListItemButton className="listnav" href="#category">
-          Category
-        </ListItemButton> */}
+     
         <ListItemButton className="listnav" href="/blog">
          เรื่องหน้ารู้
         </ListItemButton>
@@ -82,73 +71,13 @@ export default function DrawerAppBar(props: Props) {
           >
             <MenuIcon />
           </IconButton>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          {/* <motion.div
-                initial="hidden"
-                animate="visible"
-                variants={{
-                  visible: {
-                    opacity: 1,
-                    x: 0,
-                    transition: {
-                      type: "spring",
-                      damping: 200,
-                      stiffness: 500,
-                    },
-                  },
-                  hidden: {
-                    opacity: 0,
-                    x: -400,
-                    transition: {
-                      type: "spring",
-                      damping: 0,
-                      stiffness: 0,
-                    },
-                  },
-                }}
-              >
-          <Image src="/nav.png" width={60} height={60} alt="logo" />
-          </motion.div> */}
-          &nbsp;&nbsp;
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={{
-              hidden: {
-                scale: 0.8,
-                opacity: 0,
-              },
-              visible: {
-                scale: 1,
-                opacity: 1,
-                transition: {
-                  delay: 0.4,
-                },
-              },
-            }}
-          >
+          
             <h4 className="text-nav" >เสริมศิริ อลูมินั่ม & </h4>
-          </motion.div>
-          &nbsp;&nbsp;
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={{
-              hidden: {
-                scale: 0.8,
-                opacity: 0,
-              },
-              visible: {
-                scale: 1,
-                opacity: 1,
-                transition: {
-                  delay: 0.4,
-                },
-              },
-            }}
-          >
+          
+    
+          
           <h4 className="sub-nav-text" style={{color:"#FF9D34",fontWeight:"bold"}}> สแตนเลส</h4>
-          </motion.div>
+          
           <Typography
             variant="h5"
             noWrap
@@ -167,52 +96,29 @@ export default function DrawerAppBar(props: Props) {
           ></Typography>
           <Box sx={{ display: { xs: "none", md: "block" } }}>
             <nav className="navMenu">
-              <motion.div
-                initial="hidden"
-                animate="visible"
-                variants={{
-                  visible: {
-                    opacity: 1,
-                    y: 0,
-                    transition: {
-                      type: "spring",
-                      damping: 100,
-                      stiffness: 150,
-                    },
-                  },
-                  hidden: {
-                    opacity: 0,
-                    y: 50,
-                    transition: {
-                      type: "spring",
-                      damping: 0,
-                      stiffness: 0,
-                    },
-                  },
-                }}
-              >
-                <a href="/">
+              
+                <Link href="/">
                   <Button className="btnnav">
                     {" "}
                     <HomeIcon fontSize="small" />
                     &nbsp;หน้าแรก{" "}
                   </Button>
-                </a>
-                <a href="/products">
+                </Link>
+                <Link href="/products">
                   <Button className="btnnav">
                     <ProductionQuantityLimitsIcon fontSize="small" /> สินค้าของเรา
                   </Button>
-                </a>
+                </Link>
                 {/* <a href="#category">
                   <Button className="btnnav">Category</Button>
                 </a> */}
-                <a href="/blog">
+                <Link href="/blog">
                   <Button className="btnnav">เรื่องหน้ารู้</Button>
-                </a>
-                <a href="/contact">
+                </Link>
+                <Link href="/contact">
                   <Button className="btnnav">ติดต่อเรา</Button>
-                </a>
-              </motion.div>
+                </Link>
+              
             </nav>
           </Box>
         </Toolbar>

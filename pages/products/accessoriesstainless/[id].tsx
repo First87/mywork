@@ -3,6 +3,8 @@ import Head from 'next/head';
 import { Button } from '@mui/material';
 import { accessoriesstainlessProducts } from '../../component/productsData';
 import { GetServerSidePropsContext } from 'next';
+import Link from 'next/link';
+
 
 interface Product {
   id: string;
@@ -52,11 +54,11 @@ export default function ProductDetails({ productToShow }: ProductDetailsProps) {
                   <h6 className="mb-3">รายละเอียด: {productToShow.detail}</h6>
                   <p className="mb-3">รหัสสินค้า: {productToShow.id}</p>
                 </div>
-                <a href={`/products/mirror/products`}>
-                  <Button className="ctn" variant="contained">
-                    ย้อนกลับ
-                  </Button>
-                </a>
+                <Link href="/products/mirror/products">
+                <Button className="ctn" variant="contained">
+                  ย้อนกลับ
+                </Button>
+              </Link>
               </div>
             </div>
           </div>

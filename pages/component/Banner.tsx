@@ -27,8 +27,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import h1  from "../../public/h1.png"
+import h2  from "../../public/h2.png"
+import h3  from "../../public/h3.png"
 
 // import required modules
+
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const banner1 = () => {
   return (
@@ -52,106 +56,35 @@ const banner1 = () => {
       >
         <SwiperSlide>
         <Image
-                src={"/h1.png"}
-                layout="responsive"
+                src={h1}
                 alt="banner"
-                objectFit="cover"
-                height={100}
-                width={100}
+                height={500}
+                width={1600}
+                style={{width:"100%",height:"auto"}}
               />
         </SwiperSlide>
         <SwiperSlide>
         <Image
-                src={"/h2.png"}
-                layout="responsive"
-                objectFit="cover"
-                height={100}
+                src={h2}
                 alt="banner"
-                width={100}
+                height={500}
+                width={1600}
+                style={{width:"100%",height:"auto"}}
+                
               />
         </SwiperSlide>
         <SwiperSlide>
         <Image
-                src={"/Orange And Blue Modern Professional Construction Banner Design.png"}
-                layout="responsive"
+                src={h3}
                 alt="banner"
-                objectFit="cover"
-                height={100}
-                width={100}
+                height={500}
+                width={1600}
+                style={{width:"100%",height:"auto"}}
               />
         </SwiperSlide>
         
       </Swiper>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {/* <div
-          id="carouselExampleControls"
-          className="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-             
-            </div>
-            <div className="carousel-item">
-              
-            </div>
-            <div className="carousel-item">
-              <Image
-                src={"/Orange And Blue Modern Professional Construction Banner Design.png"}
-                layout="responsive"
-                objectFit="cover"
-                height={100}
-                width={100}
-              />
-            </div>
-          </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div> */}
       </main>
     </>
   );

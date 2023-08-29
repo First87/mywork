@@ -1,25 +1,14 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
+
 import Button from "@mui/material/Button";
-import CameraIcon from "@mui/icons-material/PhotoCamera";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import CssBaseline from "@mui/material/CssBaseline";
-import Grid from "@mui/material/Grid";
 import Image from "next/image";
-import Stack from "@mui/material/Stack";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
 import Link from "@mui/material/Link";
-import AnimatedElement2 from "../component/animation2";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/scrollbar";
@@ -274,22 +263,20 @@ export default function Album() {
             </div>
             <Image
               src="/240_F_100037121_xwLqenneMugbpZlMkZqcSeFmP4V4pUkc.jpg"
-              layout="responsive"
-              objectFit="cover"
               height={300}
               alt="banner"
               width={300}
+              style={{width:"100%" , height:"auto"}}
             />
           </div>
 
           <div className="product">
             <Image
               src="/240_F_135801329_d3tQg6StEkoG09Lv9Fmvyb6CsyE84gGY.jpg"
-              layout="responsive"
-              objectFit="cover"
               alt="img"
               height={300}
               width={300}
+              style={{width:"100%" , height:"auto"}}
             />
             <div className="product-info">
               {/* <p>Test2</p>
@@ -304,11 +291,10 @@ export default function Album() {
             </div>
             <Image
               src="/240_F_151775100_t5YuolbNFago8DZQ2Bo7VviEEOB39nKs.jpg"
-              layout="responsive"
-              objectFit="cover"
               alt="img"
               height={300}
               width={300}
+              style={{width:"100%" , height:"auto"}}
             />
           </div>
         </div>

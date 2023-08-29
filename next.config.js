@@ -2,8 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['drive.google.com'], // Add any other allowed domains as needed
-    unoptimized: true,
+    // domains: ['drive.google.com'], // Add any other allowed domains as needed
     remotePatterns: [
       {
         protocol: "https",

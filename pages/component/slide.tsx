@@ -1,24 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel, CarouselItem, CarouselIndicators } from "reactstrap";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
-import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import Image from "next/image";
-import AdbIcon from "@mui/icons-material/Adb";
 import { motion } from "framer-motion";
-import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+
 
 function Slide() {
   // State for Active index
@@ -26,8 +11,7 @@ function Slide() {
 
   // State for Animation
   const [animating, setAnimating] = React.useState(false);
-
-  // Sample items for Carousel
+// /  // Sample items for Carousel
   const items = [
     {
       src: "/IMG_E4390.jpg",
@@ -94,11 +78,9 @@ function Slide() {
             className="banner1"
               src={item.src}
               alt="banner"
-              layout="responsive"
-              objectFit="cover"
-              height={0}
-              width={0}
-             
+              height={500}
+              width={2000}
+              style={{width:"100%",height:"auto"}}
               
             />
           </motion.div>

@@ -18,6 +18,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
+
 // import AnimatedTextWord from "./component/AnimatedTextWord";
 
 const Home = () => {
@@ -75,6 +76,7 @@ const Home = () => {
                   src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100057451749957&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                   width="330"
                   height="400"
+
                 ></iframe>
               </div>
             </div>
@@ -89,16 +91,14 @@ const Home = () => {
               <div className="products">
           <div className="product">
             <div className="product-info">
-              {/* <p>Test1</p>
-              <h3>first</h3> */}
+    
             </div>
             <Image
             alt="banner"
                src="https://drive.google.com/uc?export=download&id=1zpLH7-aMrf4EcxdpWCQjX-9DbiMm-9Pd"
-              layout="responsive"
-              objectFit="cover"
               height={300}
               width={300}
+              style={{width:"100%" , height:"auto"}}
             />
           </div>
 
@@ -106,29 +106,26 @@ const Home = () => {
             <Image
             alt="banner"
                src="https://drive.google.com/uc?export=download&id=1tdM5FTmPf8KGKlMV-Qy5JNWmfSw20gkr"
-              layout="responsive"
-              objectFit="cover"
               height={300}
               width={300}
+              style={{width:"100%" , height:"auto"}}
             />
             <div className="product-info">
-              {/* <p>Test2</p>
-              <h3>first</h3> */}
+             
             </div>
           </div>
 
           <div className="product">
             <div className="product-info">
-              {/* <p>Test</p>
-              <h3>first</h3> */}
+             
             </div>
             <Image
             alt="banner"
                src="https://drive.google.com/uc?export=download&id=1mvKs0voT8z9pVVbfIB7jCiuEvMFzmaG2"
-              layout="responsive"
-              objectFit="cover"
               height={300}
               width={300}
+              style={{width:"100%" , height:"auto"}}
+              
             />
           </div>
         </div>

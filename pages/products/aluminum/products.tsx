@@ -14,7 +14,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Head from "next/head";
-import Link from '@mui/material/Link';
+import Link from 'next/link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 // Import the product data arrays
@@ -28,6 +28,10 @@ export default function Album() {
 
   return (
     <>
+    <Head>
+        <title>อลูมิเนียม| เสริมศิริ อลูมินั่ม & สแตนเลส</title>
+        <link rel="icon" href="nav.png" type="image/x-icon"></link>
+      </Head>
     
     <ThemeProvider theme={defaultTheme}>
       <main>
@@ -65,19 +69,7 @@ export default function Album() {
                     </Link>
                   </CardActions>
                 </Card>
-                <Head>
-                <title>สแตนเลส| เสริมศิริ อลูมินั่ม & สแตนเลส</title>
-                <link
-                 rel = "icon"
-                 href = "nav.png" 
-                  type = "image/x-icon">
-                  </link>
-                    <meta name="description" content={product.detail} />
-                    <meta property="og:title" content={product.title} />
-                    <meta property="og:description" content={product.detail} />
-                    <meta property="og:image" content={product.src} />
-                    {/* สามารถเพิ่มแท็ก <meta> อื่น ๆ ที่เกี่ยวข้องกับ SEO ต่อที่นี่ */}
-                  </Head>
+                
               </Grid>
             ))}
           </Grid>
