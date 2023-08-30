@@ -2,15 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    // domains: ['drive.google.com'], // Add any other allowed domains as needed
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "drive.google.com",
-      },
-    ],
+    domains: ['drive.google.com'], // เพิ่มโดเมนที่อนุญาตให้โหลดรูปภาพมาจาก
   },
-  trailingSlash: true, // เพิ่ม trailing slash ให้กับ URL ที่สร้าง
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
